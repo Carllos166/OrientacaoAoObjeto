@@ -18,4 +18,3 @@ class Conta:
         self.saldo -= valor
 
 
-#orientacao
