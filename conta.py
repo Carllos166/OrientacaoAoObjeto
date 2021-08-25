@@ -1,4 +1,3 @@
-#Iniciando uma class:
 
 class Conta:
     def __init__(self, numero, titular, saldo, limite):
@@ -11,12 +10,13 @@ class Conta:
     def extrato(self):
         print("Saldo {} do titular {}".format(self.saldo, self.titular))
 
-    def depositar(self, valor):
+    def deposita(self, valor):
         self.__saldo += valor
 
-    def sacar(self, valor):
+    def saca(self, valor):
         self.__saldo -= valor
 
-    def transferir(self, valor, destino):
+    def transfere(self, valor, destino):
         self.saca(valor)
         destino.deposita(valor)
+    
